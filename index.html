@@ -7,8 +7,304 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.8/dist/cdn.min.js"></script>
+   
+    <script src="https://unpkg.com/maplibre-gl@^5.3.1/dist/maplibre-gl.js"></script>
+    <link href="https://unpkg.com/maplibre-gl@^5.3.1/dist/maplibre-gl.css" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
-    <button class="btn btn-primary">Button</button>
+    <div class="navbar bg-base-100 shadow-sm">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+              <li><a>Item 1</a></li>
+              <li>
+                <a>Parent</a>
+                <ul class="p-2">
+                  <li><a>Submenu 1</a></li>
+                  <li><a>Submenu 2</a></li>
+                </ul>
+              </li>
+              <li><a>Item 3</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-xl">daisyUI</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Item 1</a></li>
+            <li>
+              <details>
+                <summary>Parent</summary>
+                <ul class="p-2">
+                  <li><a>Submenu 1</a></li>
+                  <li><a>Submenu 2</a></li>
+                </ul>
+              </details>
+            </li>
+            <li><a>Item 3</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <div class="inline-grid *:[grid-area:1/1]">
+            <div class="status status-error animate-ping"></div>
+            <div class="status status-error"></div>
+          </div>&nbsp;Tami is closed
+        </div>
+    </div>
+
+    <div
+      class="hero min-h-96"
+      style="background-image: url(./image.png);">
+      <div class="hero-overlay"></div>
+      <div class="hero-content text-neutral-content text-center">
+        <div class="max-w-md">
+          <div class="wissotsky-horizontal-text">
+            <p class="mb-5 text-5xl font-bold">Tel&nbsp;</p>
+            <p class="mb-5 text-5xl font-bold">Aviv&nbsp;</p>
+            <p class="mb-5 text-5xl font-bold">Makers&nbsp;</p>
+            <p class="mb-5 text-5xl font-bold">I{random}</p>
+          </div>
+          <p class="mb-5">
+            TAMI is a community-driven <a class="link" href="https://en.wikipedia.org/wiki/Hackerspace">hackerspace</a> located at Shoken street 19, southern Tel-Aviv.
+          </p>
+          <button class="btn btn-primary">Visit TAMI</button>
+          <button class="btn btn-secondary">Learn More</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2 class="p-4 pb-2 text-8 font-bold">Join the community</h2>
+      <div class="flex w-full overflow-scroll">
+        <div class="card bg-base-100 min-w-64 card-sm shadow-sm">
+          <div class="card-body">
+            <div class="flex">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+              </svg>
+              <h2 class="card-title">&nbsp;Phone</h2>
+            </div>
+            <p>Call us at any time, and if someone is in the space, they will answer.</p>
+            <div class="card-actions justify-end">
+              <a class="link" href="tel:+97233726660">03-372-66-60</a>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-base-100 min-w-64 card-sm shadow-sm">
+          <div class="card-body">
+            <div class="flex">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+              </svg>              
+              <h2 class="card-title">&nbsp;E-Mail</h2>
+            </div>
+            <p>Shoot us an e-mail</p>
+            <div class="card-actions justify-end">
+              <a class="link" href="mailto:tami@tami.org.il">tami@tami.org.il</a>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-base-100 min-w-64 card-sm shadow-sm">
+          <div class="card-body">
+            <div class="flex">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="size-6" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09"/>
+              </svg>
+              <h2 class="card-title">&nbsp;Telegram</h2>
+            </div>
+            <p>Join channels based on your interests</p>
+            <div class="card-actions justify-end">
+              <a class="link" href="https://t.me/addlist/IQ6HaZR1AWY4Y2Fi">Add Chats</a>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-base-100 min-w-64 card-sm shadow-sm">
+          <div class="card-body">
+            <div class="flex">
+              <svg fill="currentColor" width="32px" height="32px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" class="size-6">
+                <path d="M31.969 26.984c-0.401-2.572-5.163-0.593-5.459-3.411-0.417-4 5.531-12.615 5.063-15.964-0.417-3.005-2.453-3.64-4.219-3.677-1.715-0.025-2.167 0.245-2.745 0.584-0.339 0.192-0.817 0.577-1.484-0.057-0.443-0.423-0.745-0.713-1.208-1.089-0.24-0.192-0.62-0.432-1.261-0.525-0.629-0.099-1.463 0-1.984 0.219-0.532 0.229-0.937 0.625-1.369 1-0.433 0.375-1.532 1.599-2.548 1.145-0.448-0.192-1.948-0.943-3.031-1.405-2.084-0.901-5.093 0.557-6.183 2.489-1.615 2.864-4.796 14.135-5.287 15.62-1.077 3.333 1.381 6.052 4.683 5.895 1.401-0.067 2.333-0.572 3.213-2.181 0.511-0.928 5.308-13.448 5.667-14.057 0.261-0.432 1.125-1.005 1.855-0.636 0.735 0.38 0.88 1.161 0.771 1.896-0.183 1.193-3.557 8.839-3.693 9.699-0.219 1.473 0.48 2.285 2.011 2.369 1.043 0.052 2.089-0.317 2.912-1.88 0.464-0.871 5.797-11.557 6.265-12.271 0.521-0.781 0.937-1.043 1.475-1.011 0.411 0.020 1.061 0.125 0.9 1.353-0.161 1.209-4.452 9.043-4.9 10.959-0.605 2.573 0.801 5.167 3.124 6.308 1.48 0.728 7.959 1.968 7.433-1.371z"/>
+              </svg>
+              <h2 class="card-title">&nbsp;Meetup</h2>
+            </div>
+            <p>Stay up to date on upcoming events</p>
+            <div class="card-actions justify-end">
+              <a class="link" href="https://www.meetup.com/tel-aviv-makers-tami/">Join Group</a>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-base-100 min-w-64 card-sm shadow-sm">
+          <div class="card-body">
+            <div class="flex">
+              <svg fill="currentColor" width="32px" height="32px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" class="size-6">
+                <path d="M0.844 0.735v30.531h2.197v0.735h-3.041v-32h3.041v0.735zM10.235 10.412v1.547h0.041c0.412-0.595 0.912-1.047 1.489-1.371 0.579-0.323 1.251-0.484 2-0.484 0.719 0 1.38 0.141 1.975 0.417 0.599 0.281 1.047 0.776 1.359 1.479 0.339-0.5 0.803-0.943 1.38-1.323 0.579-0.38 1.267-0.573 2.063-0.573 0.604 0 1.161 0.073 1.677 0.224 0.521 0.145 0.959 0.38 1.328 0.703 0.365 0.329 0.651 0.751 0.86 1.272 0.203 0.52 0.307 1.151 0.307 1.891v7.635h-3.129v-6.468c0-0.381-0.016-0.745-0.048-1.084-0.020-0.307-0.099-0.604-0.239-0.88-0.131-0.251-0.333-0.459-0.584-0.593-0.255-0.152-0.609-0.224-1.047-0.224-0.443 0-0.797 0.083-1.068 0.249-0.265 0.167-0.489 0.396-0.64 0.667-0.161 0.287-0.265 0.604-0.308 0.927-0.052 0.349-0.077 0.699-0.083 1.048v6.359h-3.131v-6.401c0-0.339-0.005-0.672-0.025-1-0.011-0.317-0.073-0.624-0.193-0.916-0.104-0.281-0.301-0.516-0.552-0.672-0.255-0.167-0.636-0.255-1.136-0.255-0.151 0-0.348 0.031-0.588 0.099-0.24 0.067-0.479 0.192-0.703 0.375-0.229 0.188-0.428 0.453-0.589 0.797-0.161 0.343-0.239 0.796-0.239 1.359v6.62h-3.131v-11.421zM31.156 31.265v-30.531h-2.197v-0.735h3.041v32h-3.041v-0.735z"/>
+              </svg>
+              <h2 class="card-title">&nbsp;Matrix</h2>
+            </div>
+            <p>An awesome federated alternative chat protocol, bridged with telegram</p>
+            <div class="card-actions justify-end">
+              <a class="link" href="https://matrix.to/#/#tami:telavivmakers.space">#tami:telavivmakers.space</a>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-base-100 min-w-64 card-sm shadow-sm">
+          <div class="card-body">
+            <div class="flex">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z" />
+              </svg>              
+              <h2 class="card-title">&nbsp;IRC</h2>
+            </div>
+            <p>It is bridged to Telegram (main channel only ATM)</p>
+            <div class="card-actions justify-end">
+              <a class="link" href="https://webchat.oftc.net/?randomnick=1&channels=tami">#tami at irc.oftc.net</a>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-base-100 min-w-64 card-sm shadow-sm">
+          <div class="card-body">
+            <div class="flex">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="size-6" viewBox="0 0 16 16">
+                <path d="M15.698 7.287 8.712.302a1.03 1.03 0 0 0-1.457 0l-1.45 1.45 1.84 1.84a1.223 1.223 0 0 1 1.55 1.56l1.773 1.774a1.224 1.224 0 0 1 1.267 2.025 1.226 1.226 0 0 1-2.002-1.334L8.58 5.963v4.353a1.226 1.226 0 1 1-1.008-.036V5.887a1.226 1.226 0 0 1-.666-1.608L5.093 2.465l-4.79 4.79a1.03 1.03 0 0 0 0 1.457l6.986 6.986a1.03 1.03 0 0 0 1.457 0l6.953-6.953a1.03 1.03 0 0 0 0-1.457"/>
+              </svg>
+              <h2 class="card-title">&nbsp;Github/Gitea</h2>
+            </div>
+            <p>#TODO add description</p>
+            <div class="card-actions justify-end">
+              <a class="link" href="https://github.com/telavivmakers">Github</a>
+              <a class="link" href="https://git.telavivmakers.space/explore/repos">Gitea (Local)</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex w-full flex-col lg:flex-row">
+      <div class="card bg-base-100 rounded-box flex h-96 grow">
+        <p class="p-4 text-xs opacity-60">Visit TAMI</p>
+        <div id="map" class="size-full grow"></div>
+      </div>
+      <div class="card bg-base-300 rounded-box grid h-96 overflow-scroll">
+        <ul class="list bg-base-100 rounded-box shadow-md" x-data="{ events: [] }" x-init="events = await fetchMeetups()">
+          <li class="p-4 pb-2 text-xs opacity-60 tracking-wide">Upcoming Events</li>
+          <template x-for="event in events">
+            <li class="list-row">
+              <div class="flex items-center">
+                <template x-if="event.isMusicEvent">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="opacity-30 size-8">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m9 9 10.5-3m0 6.553v3.75a2.25 2.25 0 0 1-1.632 2.163l-1.32.377a1.803 1.803 0 1 1-.99-3.467l2.31-.66a2.25 2.25 0 0 0 1.632-2.163Zm0 0V2.25L9 5.25v10.303m0 0v3.75a2.25 2.25 0 0 1-1.632 2.163l-1.32.377a1.803 1.803 0 0 1-.99-3.467l2.31-.66A2.25 2.25 0 0 0 9 15.553Z" />
+                  </svg>
+                </template>
+                <template x-if="event.isRepairEvent">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="opacity-30 size-8">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z" />
+                  </svg>              
+                </template>
+                <template x-if="event.isOpenNightEvent">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" stroke-width="1.5" class="fill-lime-700 size-8">
+                    <path d="M440-120v-319q-64 0-123-24.5T213-533q-45-45-69-104t-24-123v-80h80q63 0 122 24.5T426-746q31 31 51.5 68t31.5 79q5-7 11-13.5t13-13.5q45-45 104-69.5T760-720h80v80q0 64-24.5 123T746-413q-45 45-103.5 69T520-320v200h-80Zm0-400q0-48-18.5-91.5T369-689q-34-34-77.5-52.5T200-760q0 48 18 92t52 78q34 34 78 52t92 18Zm80 120q48 0 91.5-18t77.5-52q34-34 52.5-78t18.5-92q-48 0-92 18.5T590-569q-34 34-52 77.5T520-400Zm0 0Zm-80-120Z"/>
+                  </svg>
+                </template>
+                <template x-if="event.isMathEvent">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" width="24px" height="24px" stroke-width="1.5" stroke="currentColor" class="opacity-30 size-8">
+                    <text x="6" y="24" font-size="32">π</text>
+                  </svg>
+                </template>
+                <template x-if="event.isOtherEvent">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor" class="opacity-30 size-8">
+                    <path d="M587.69-240q-38.54 0-65.42-26.88-26.88-26.89-26.88-65.43 0-38.54 26.88-65.42 26.88-26.88 65.42-26.88 38.54 0 65.43 26.88Q680-370.85 680-332.31q0 38.54-26.88 65.43Q626.23-240 587.69-240ZM212.31-100Q182-100 161-121q-21-21-21-51.31v-535.38Q140-738 161-759q21-21 51.31-21h55.38v-84.61h61.54V-780h303.08v-84.61h60V-780h55.38Q778-780 799-759q21 21 21 51.31v535.38Q820-142 799-121q-21 21-51.31 21H212.31Zm0-60h535.38q4.62 0 8.46-3.85 3.85-3.84 3.85-8.46v-375.38H200v375.38q0 4.62 3.85 8.46 3.84 3.85 8.46 3.85ZM200-607.69h560v-100q0-4.62-3.85-8.46-3.84-3.85-8.46-3.85H212.31q-4.62 0-8.46 3.85-3.85 3.84-3.85 8.46v100Zm0 0V-720v112.31Z"/>
+                  </svg>
+                </template>
+              </div>
+              <div class="list-col-grow">
+                <div x-text="event.title">Event Name</div>
+                <div class="text-xs uppercase font-semibold opacity-60" x-text="parseMeetupDateTime(event.dateTime)">Event datetime</div>
+              </div>
+              <a class="btn btn-square btn-ghost" :href="event.url" target="_blank" rel="noopener">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
+                </svg>
+              </a>
+            </li>
+          </template>
+        </ul>
+
+      </div>
+    </div>
+
+
+    <!--
+    <div class="hero bg-base-200 min-h-screen">
+        <div class="hero-content flex-col lg:flex-row-reverse">
+            <img
+            src="./image.png"
+            class="max-w-sm rounded-lg shadow-2xl" />
+            <div>
+            <h1 class="text-5xl font-bold">Tel Aviv Makers</h1>
+            <p class="py-6">
+                TAMI is a community-driven <a class="link" href="https://en.wikipedia.org/wiki/Hackerspace">hackerspace</a> located in Shoken street 19, southern Tel-Aviv.
+            </p>
+            <button class="btn btn-primary">Visit TAMI</button>
+            <button class="btn btn-secondary">Learn More</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero bg-base-200 min-h-screen">
+        <div class="hero-content flex-col lg:flex-row">
+            <img
+            src="./image.png"
+            class="max-w-sm rounded-lg shadow-2xl" />
+            <div>
+            <h1 class="text-5xl font-bold">Community</h1>
+            <p class="py-6">
+            Everything in TAMI is run entirely by volunteers: software and hardware techies, DIY enthusiasts, amateur wood and metalworking makers, scientists, artists and musicians - curious and creative people who want to build and create, together or alone, and want a space with good atmosphere, work equipment, and other people to talk, exchange ideas and cooperate with.
+            </p>
+            <button class="btn btn-primary">Get Started</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero bg-base-200 min-h-screen">
+        <div class="hero-content flex-col lg:flex-row-reverse">
+            <img
+            src="./image.png"
+            class="max-w-sm rounded-lg shadow-2xl" />
+            <div>
+            <h1 class="text-5xl font-bold">Do-ocracy</h1>
+            <p class="py-6">
+                We are a <a class="link" href="https://communitywiki.org/wiki/DoOcracy">do-ocracy</a>, meaning that whoever is doing something is the person who decides how it gets done. Any group projects, building/planning new space facilities, etc. - all gets done because an ordinary member thought it was important, got people excited about it, and followed through.
+                <br/>
+                We are open for anyone, no matter whether you are experienced or just a beginner!
+                <br/>
+                Join us online (see Contact section below).
+                Get acquainted with the space.
+                Visit our events or organize your own.
+                Donate and contribute to support TAMI.
+                Be an active TAMI member.
+            </p>
+            <button class="btn btn-primary">Get Started</button>
+            </div>
+        </div>
+    </div>
+    -->
+
+  <script>
+      var map = new maplibregl.Map({
+          container: 'map', // container id
+          style: 'https://demotiles.maplibre.org/style.json', // style URL
+          center: [0, 0], // starting position [lng, lat]
+          zoom: 1 // starting zoom
+      });
+  </script>
 </body>
 </html>

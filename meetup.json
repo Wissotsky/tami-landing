@@ -1,0 +1,352 @@
+{
+    "groupByUrlname": {
+        "name": "Tel Aviv M/Hackerspace (TAMI)",
+        "memberships": {
+            "count": 3976,
+            "__typename": "GroupUserConnection"
+        },
+        "upcomingEvents": {
+            "edges": [
+                {
+                    "node": {
+                        "title": "TAMI Sonic (Music Night)",
+                        "eventUrl": "https://www.meetup.com/tel-aviv-makers-tami/events/306979136",
+                        "description": "TAMI Sonic (Music Night) is bi-weekly informal meetup devoted to playing and experimenting with sound.",
+                        "dateTime": "2025-04-17T20:00+03:00",
+                        "__typename": "Event",
+                        "date": "2025-04-17T17:00:00.000Z",
+                        "time": "20:00",
+                        "url": "https://www.meetup.com/tel-aviv-makers-tami/events/306979136"
+                    },
+                    "__typename": "UpcomingEventsEdge"
+                },
+                {
+                    "node": {
+                        "title": "Repair caffé קפה תיקונים",
+                        "eventUrl": "https://www.meetup.com/tel-aviv-makers-tami/events/306918122",
+                        "description": "באו לתקן כל מה שלא עובד.\nCome to fix together",
+                        "dateTime": "2025-04-21T20:00+03:00",
+                        "__typename": "Event",
+                        "date": "2025-04-21T17:00:00.000Z",
+                        "time": "20:00",
+                        "url": "https://www.meetup.com/tel-aviv-makers-tami/events/306918122"
+                    },
+                    "__typename": "UpcomingEventsEdge"
+                },
+                {
+                    "node": {
+                        "title": "TAMI open-fa-sure (Open Night)",
+                        "eventUrl": "https://www.meetup.com/tel-aviv-makers-tami/events/307048251",
+                        "description": "TAMI open-fa-sure (Open Night) is a great time to visit the space and get to know how things work.\n\nIf you want to double check whether someone is in the space, call 03-3726660.",
+                        "dateTime": "2025-04-21T20:00+03:00",
+                        "__typename": "Event",
+                        "date": "2025-04-21T17:00:00.000Z",
+                        "time": "20:00",
+                        "url": "https://www.meetup.com/tel-aviv-makers-tami/events/307048251"
+                    },
+                    "__typename": "UpcomingEventsEdge"
+                },
+                {
+                    "node": {
+                        "title": "TAMIFEST #2",
+                        "eventUrl": "https://www.meetup.com/tel-aviv-makers-tami/events/307307977",
+                        "description": "**TAMIFEST #2**\n22.4.2025\nDoors 20:00\n\nElectronic music shows at the TAMI hackerspace by acts from the local music scene\n\nPerformances:\nSynthetic Blue\nElectric Sea\nNyeldA\nCLIPed\n\nMusic by DJ Princessa",
+                        "dateTime": "2025-04-22T20:00+03:00",
+                        "__typename": "Event",
+                        "date": "2025-04-22T17:00:00.000Z",
+                        "time": "20:00",
+                        "url": "https://www.meetup.com/tel-aviv-makers-tami/events/307307977"
+                    },
+                    "__typename": "UpcomingEventsEdge"
+                },
+                {
+                    "node": {
+                        "title": "TAMI π תאמי",
+                        "eventUrl": "https://www.meetup.com/tel-aviv-makers-tami/events/307164180",
+                        "description": "TAMI π is a curated meeting, workshop or presentation about a topic in math. It happens every two weeks at TAMI. The event is hosted by a different person each time. You can come, learn topics and share ideas in an open and informal atmosphere.\n\nThis time Julian Daich will talk about[ Dirac's Bra Ket notation](https://en.wikipedia.org/wiki/Bra%E2%80%93ket_notation).\n\nFor proposing a presentation or topic you can drop us a line.\n\nתאמי פי הוא מפגש אוצר, סדנה או מצגת על נושא במתמטיקה. זה קורה כל שבועיים בתאמי. את האירוע מנחה אדם אחר בכל פעם. תוכלו לבוא, ללמוד נושאים ולחלוק רעיונות באווירה פתוחה ונעימה.\n\nהפעם ג'ולואן דייטש יציג על [כתיבת דירק](https://en.wikipedia.org/wiki/Bra%E2%80%93ket_notation).\n\nלהצעת מצגת או נושא ניתן לפנות אלינו.",
+                        "dateTime": "2025-04-24T19:00+03:00",
+                        "__typename": "Event",
+                        "date": "2025-04-24T16:00:00.000Z",
+                        "time": "19:00",
+                        "url": "https://www.meetup.com/tel-aviv-makers-tami/events/307164180"
+                    },
+                    "__typename": "UpcomingEventsEdge"
+                },
+                {
+                    "node": {
+                        "title": "TAMI open-fa-sure (Open Night)",
+                        "eventUrl": "https://www.meetup.com/tel-aviv-makers-tami/events/307180647",
+                        "description": "TAMI open-fa-sure (Open Night) is a great time to visit the space and get to know how things work.\n\nIf you want to double check whether someone is in the space, call 03-3726660.",
+                        "dateTime": "2025-04-28T20:00+03:00",
+                        "__typename": "Event",
+                        "date": "2025-04-28T17:00:00.000Z",
+                        "time": "20:00",
+                        "url": "https://www.meetup.com/tel-aviv-makers-tami/events/307180647"
+                    },
+                    "__typename": "UpcomingEventsEdge"
+                },
+                {
+                    "node": {
+                        "title": "Repair caffé קפה תיקונים",
+                        "eventUrl": "https://www.meetup.com/tel-aviv-makers-tami/events/307180830",
+                        "description": "באו לתקן כל מה שלא עובד.\nCome to fix together",
+                        "dateTime": "2025-04-28T20:00+03:00",
+                        "__typename": "Event",
+                        "date": "2025-04-28T17:00:00.000Z",
+                        "time": "20:00",
+                        "url": "https://www.meetup.com/tel-aviv-makers-tami/events/307180830"
+                    },
+                    "__typename": "UpcomingEventsEdge"
+                },
+                {
+                    "node": {
+                        "title": "TAMI Voice (maintenance day)",
+                        "eventUrl": "https://www.meetup.com/tel-aviv-makers-tami/events/307199435",
+                        "description": "**TAMI Voice (maintenance day)**\n\nThe space is open for everyone to come and enjoy, though you will see TAMI Elves cleaning and sorting things out. And you are welcome to join and help!\nIt is also a great time to share your thoughts and ideas how to make TAMI a better place!",
+                        "dateTime": "2025-04-29T21:00+03:00",
+                        "__typename": "Event",
+                        "date": "2025-04-29T18:00:00.000Z",
+                        "time": "21:00",
+                        "url": "https://www.meetup.com/tel-aviv-makers-tami/events/307199435"
+                    },
+                    "__typename": "UpcomingEventsEdge"
+                },
+                {
+                    "node": {
+                        "title": "One  Computer Per Human מחשב אחד לכל אדם",
+                        "eventUrl": "https://www.meetup.com/tel-aviv-makers-tami/events/306415038",
+                        "description": "\\#\\# בנה מחשב משלך בלי לקנות כלום\\!\n\\*\\*רוצה לחסוך כסף ולבנות מחשב משלך?\\*\\*\n\\*\\*הצטרף לקורס בנית/הרכבת מחשבים ייחודי מבוסס על שימוש בזבל דיגיטלי\nותוכנה חופשית!\\*\\*\n\\*\\*מה תקבלו?\\*\\*\n\\* \\*\\*מחשב ניח שלם, פעיל ועובד\\*\\* שתיקחו הביתה בסוף הקורס.\n\\* ידע שלם בבניית, הרכבת, התקנת והפעלת מערת הפעלה גניו/ לינוקס תוכנות מחשב \\*\\*מאפס\\*\\*.\n\\* \\*\\*כלים ושיטות\\*\\* שיאפשרו לכם לתחזק ולתקן את המחשב שלכם בעתיד \\*\\*בלי\nצורך לקנות כלום\\*\\*.\n\\* \\*\\*הדרכה מקיפה\\*\\* כיצד להשיג חלקים במחירים זולים או בחינם.\n\\* \\*\\*קורס מותאם לכל אחד\\*\\*, ללא צורך בידע קודם.\n\\*\\*משך הקורס:\\*\\*עד 4 מפגשים שתאריכם כבעים במפגש הראשון.\n\\*\\*עלות:\\*\\* 300₪ ! כתרומה\n\nBuild Your Own Computer Without Buying Anything!\nWant to save money and build your own computer?\nJoin our unique computer building/assembly course based on the use of\ndigital waste and free software!\nWhat will you get?\nA complete working desktop computer that you will take home at the end of the course.\nAll the needed knowledge of building, assembling, installing, and running\nGNU/ Linux computer software from scratch.\nTools and methods that will allow you to maintain and repair your\ncomputer in the future without having to buy anything.\nComprehensive guidance on how to obtain parts at low prices or for free.\nA course tailored for everyone, with no prior knowledge required.\nCourse duration: up to 4 sessions. Dates are decided according to your preferences.\nCost: 300₪! As a donation to TAMI.",
+                        "dateTime": "2025-04-30T20:00+03:00",
+                        "__typename": "Event",
+                        "date": "2025-04-30T17:00:00.000Z",
+                        "time": "20:00",
+                        "url": "https://www.meetup.com/tel-aviv-makers-tami/events/306415038"
+                    },
+                    "__typename": "UpcomingEventsEdge"
+                },
+                {
+                    "node": {
+                        "title": "TAMI Sonic (Music Night)",
+                        "eventUrl": "https://www.meetup.com/tel-aviv-makers-tami/events/307236407",
+                        "description": "TAMI Sonic (Music Night) is bi-weekly informal meetup devoted to playing and experimenting with sound.",
+                        "dateTime": "2025-05-01T20:00+03:00",
+                        "__typename": "Event",
+                        "date": "2025-05-01T17:00:00.000Z",
+                        "time": "20:00",
+                        "url": "https://www.meetup.com/tel-aviv-makers-tami/events/307236407"
+                    },
+                    "__typename": "UpcomingEventsEdge"
+                }
+            ],
+            "__typename": "UpcomingEventsConnection"
+        },
+        "__typename": "Group"
+    },
+    "db": {
+        "today": [],
+        "upcoming": [
+            {
+                "title": "TAMI Sonic (Music Night)",
+                "eventUrl": "https://www.meetup.com/tel-aviv-makers-tami/events/306979136",
+                "description": "TAMI Sonic (Music Night) is bi-weekly informal meetup devoted to playing and experimenting with sound.",
+                "dateTime": "2025-04-17T20:00+03:00",
+                "__typename": "Event",
+                "date": "2025-04-17T17:00:00.000Z",
+                "time": "20:00",
+                "url": "https://www.meetup.com/tel-aviv-makers-tami/events/306979136"
+            },
+            {
+                "title": "Repair caffé קפה תיקונים",
+                "eventUrl": "https://www.meetup.com/tel-aviv-makers-tami/events/306918122",
+                "description": "באו לתקן כל מה שלא עובד.\nCome to fix together",
+                "dateTime": "2025-04-21T20:00+03:00",
+                "__typename": "Event",
+                "date": "2025-04-21T17:00:00.000Z",
+                "time": "20:00",
+                "url": "https://www.meetup.com/tel-aviv-makers-tami/events/306918122"
+            },
+            {
+                "title": "TAMI open-fa-sure (Open Night)",
+                "eventUrl": "https://www.meetup.com/tel-aviv-makers-tami/events/307048251",
+                "description": "TAMI open-fa-sure (Open Night) is a great time to visit the space and get to know how things work.\n\nIf you want to double check whether someone is in the space, call 03-3726660.",
+                "dateTime": "2025-04-21T20:00+03:00",
+                "__typename": "Event",
+                "date": "2025-04-21T17:00:00.000Z",
+                "time": "20:00",
+                "url": "https://www.meetup.com/tel-aviv-makers-tami/events/307048251"
+            },
+            {
+                "title": "TAMIFEST #2",
+                "eventUrl": "https://www.meetup.com/tel-aviv-makers-tami/events/307307977",
+                "description": "**TAMIFEST #2**\n22.4.2025\nDoors 20:00\n\nElectronic music shows at the TAMI hackerspace by acts from the local music scene\n\nPerformances:\nSynthetic Blue\nElectric Sea\nNyeldA\nCLIPed\n\nMusic by DJ Princessa",
+                "dateTime": "2025-04-22T20:00+03:00",
+                "__typename": "Event",
+                "date": "2025-04-22T17:00:00.000Z",
+                "time": "20:00",
+                "url": "https://www.meetup.com/tel-aviv-makers-tami/events/307307977"
+            },
+            {
+                "title": "TAMI π תאמי",
+                "eventUrl": "https://www.meetup.com/tel-aviv-makers-tami/events/307164180",
+                "description": "TAMI π is a curated meeting, workshop or presentation about a topic in math. It happens every two weeks at TAMI. The event is hosted by a different person each time. You can come, learn topics and share ideas in an open and informal atmosphere.\n\nThis time Julian Daich will talk about[ Dirac's Bra Ket notation](https://en.wikipedia.org/wiki/Bra%E2%80%93ket_notation).\n\nFor proposing a presentation or topic you can drop us a line.\n\nתאמי פי הוא מפגש אוצר, סדנה או מצגת על נושא במתמטיקה. זה קורה כל שבועיים בתאמי. את האירוע מנחה אדם אחר בכל פעם. תוכלו לבוא, ללמוד נושאים ולחלוק רעיונות באווירה פתוחה ונעימה.\n\nהפעם ג'ולואן דייטש יציג על [כתיבת דירק](https://en.wikipedia.org/wiki/Bra%E2%80%93ket_notation).\n\nלהצעת מצגת או נושא ניתן לפנות אלינו.",
+                "dateTime": "2025-04-24T19:00+03:00",
+                "__typename": "Event",
+                "date": "2025-04-24T16:00:00.000Z",
+                "time": "19:00",
+                "url": "https://www.meetup.com/tel-aviv-makers-tami/events/307164180"
+            },
+            {
+                "title": "TAMI open-fa-sure (Open Night)",
+                "eventUrl": "https://www.meetup.com/tel-aviv-makers-tami/events/307180647",
+                "description": "TAMI open-fa-sure (Open Night) is a great time to visit the space and get to know how things work.\n\nIf you want to double check whether someone is in the space, call 03-3726660.",
+                "dateTime": "2025-04-28T20:00+03:00",
+                "__typename": "Event",
+                "date": "2025-04-28T17:00:00.000Z",
+                "time": "20:00",
+                "url": "https://www.meetup.com/tel-aviv-makers-tami/events/307180647"
+            },
+            {
+                "title": "Repair caffé קפה תיקונים",
+                "eventUrl": "https://www.meetup.com/tel-aviv-makers-tami/events/307180830",
+                "description": "באו לתקן כל מה שלא עובד.\nCome to fix together",
+                "dateTime": "2025-04-28T20:00+03:00",
+                "__typename": "Event",
+                "date": "2025-04-28T17:00:00.000Z",
+                "time": "20:00",
+                "url": "https://www.meetup.com/tel-aviv-makers-tami/events/307180830"
+            },
+            {
+                "title": "TAMI Voice (maintenance day)",
+                "eventUrl": "https://www.meetup.com/tel-aviv-makers-tami/events/307199435",
+                "description": "**TAMI Voice (maintenance day)**\n\nThe space is open for everyone to come and enjoy, though you will see TAMI Elves cleaning and sorting things out. And you are welcome to join and help!\nIt is also a great time to share your thoughts and ideas how to make TAMI a better place!",
+                "dateTime": "2025-04-29T21:00+03:00",
+                "__typename": "Event",
+                "date": "2025-04-29T18:00:00.000Z",
+                "time": "21:00",
+                "url": "https://www.meetup.com/tel-aviv-makers-tami/events/307199435"
+            },
+            {
+                "title": "One  Computer Per Human מחשב אחד לכל אדם",
+                "eventUrl": "https://www.meetup.com/tel-aviv-makers-tami/events/306415038",
+                "description": "\\#\\# בנה מחשב משלך בלי לקנות כלום\\!\n\\*\\*רוצה לחסוך כסף ולבנות מחשב משלך?\\*\\*\n\\*\\*הצטרף לקורס בנית/הרכבת מחשבים ייחודי מבוסס על שימוש בזבל דיגיטלי\nותוכנה חופשית!\\*\\*\n\\*\\*מה תקבלו?\\*\\*\n\\* \\*\\*מחשב ניח שלם, פעיל ועובד\\*\\* שתיקחו הביתה בסוף הקורס.\n\\* ידע שלם בבניית, הרכבת, התקנת והפעלת מערת הפעלה גניו/ לינוקס תוכנות מחשב \\*\\*מאפס\\*\\*.\n\\* \\*\\*כלים ושיטות\\*\\* שיאפשרו לכם לתחזק ולתקן את המחשב שלכם בעתיד \\*\\*בלי\nצורך לקנות כלום\\*\\*.\n\\* \\*\\*הדרכה מקיפה\\*\\* כיצד להשיג חלקים במחירים זולים או בחינם.\n\\* \\*\\*קורס מותאם לכל אחד\\*\\*, ללא צורך בידע קודם.\n\\*\\*משך הקורס:\\*\\*עד 4 מפגשים שתאריכם כבעים במפגש הראשון.\n\\*\\*עלות:\\*\\* 300₪ ! כתרומה\n\nBuild Your Own Computer Without Buying Anything!\nWant to save money and build your own computer?\nJoin our unique computer building/assembly course based on the use of\ndigital waste and free software!\nWhat will you get?\nA complete working desktop computer that you will take home at the end of the course.\nAll the needed knowledge of building, assembling, installing, and running\nGNU/ Linux computer software from scratch.\nTools and methods that will allow you to maintain and repair your\ncomputer in the future without having to buy anything.\nComprehensive guidance on how to obtain parts at low prices or for free.\nA course tailored for everyone, with no prior knowledge required.\nCourse duration: up to 4 sessions. Dates are decided according to your preferences.\nCost: 300₪! As a donation to TAMI.",
+                "dateTime": "2025-04-30T20:00+03:00",
+                "__typename": "Event",
+                "date": "2025-04-30T17:00:00.000Z",
+                "time": "20:00",
+                "url": "https://www.meetup.com/tel-aviv-makers-tami/events/306415038"
+            },
+            {
+                "title": "TAMI Sonic (Music Night)",
+                "eventUrl": "https://www.meetup.com/tel-aviv-makers-tami/events/307236407",
+                "description": "TAMI Sonic (Music Night) is bi-weekly informal meetup devoted to playing and experimenting with sound.",
+                "dateTime": "2025-05-01T20:00+03:00",
+                "__typename": "Event",
+                "date": "2025-05-01T17:00:00.000Z",
+                "time": "20:00",
+                "url": "https://www.meetup.com/tel-aviv-makers-tami/events/307236407"
+            }
+        ],
+        "all": [
+            {
+                "title": "TAMI Sonic (Music Night)",
+                "eventUrl": "https://www.meetup.com/tel-aviv-makers-tami/events/306979136",
+                "description": "TAMI Sonic (Music Night) is bi-weekly informal meetup devoted to playing and experimenting with sound.",
+                "dateTime": "2025-04-17T20:00+03:00",
+                "__typename": "Event",
+                "date": "2025-04-17T17:00:00.000Z",
+                "time": "20:00",
+                "url": "https://www.meetup.com/tel-aviv-makers-tami/events/306979136"
+            },
+            {
+                "title": "Repair caffé קפה תיקונים",
+                "eventUrl": "https://www.meetup.com/tel-aviv-makers-tami/events/306918122",
+                "description": "באו לתקן כל מה שלא עובד.\nCome to fix together",
+                "dateTime": "2025-04-21T20:00+03:00",
+                "__typename": "Event",
+                "date": "2025-04-21T17:00:00.000Z",
+                "time": "20:00",
+                "url": "https://www.meetup.com/tel-aviv-makers-tami/events/306918122"
+            },
+            {
+                "title": "TAMI open-fa-sure (Open Night)",
+                "eventUrl": "https://www.meetup.com/tel-aviv-makers-tami/events/307048251",
+                "description": "TAMI open-fa-sure (Open Night) is a great time to visit the space and get to know how things work.\n\nIf you want to double check whether someone is in the space, call 03-3726660.",
+                "dateTime": "2025-04-21T20:00+03:00",
+                "__typename": "Event",
+                "date": "2025-04-21T17:00:00.000Z",
+                "time": "20:00",
+                "url": "https://www.meetup.com/tel-aviv-makers-tami/events/307048251"
+            },
+            {
+                "title": "TAMIFEST #2",
+                "eventUrl": "https://www.meetup.com/tel-aviv-makers-tami/events/307307977",
+                "description": "**TAMIFEST #2**\n22.4.2025\nDoors 20:00\n\nElectronic music shows at the TAMI hackerspace by acts from the local music scene\n\nPerformances:\nSynthetic Blue\nElectric Sea\nNyeldA\nCLIPed\n\nMusic by DJ Princessa",
+                "dateTime": "2025-04-22T20:00+03:00",
+                "__typename": "Event",
+                "date": "2025-04-22T17:00:00.000Z",
+                "time": "20:00",
+                "url": "https://www.meetup.com/tel-aviv-makers-tami/events/307307977"
+            },
+            {
+                "title": "TAMI π תאמי",
+                "eventUrl": "https://www.meetup.com/tel-aviv-makers-tami/events/307164180",
+                "description": "TAMI π is a curated meeting, workshop or presentation about a topic in math. It happens every two weeks at TAMI. The event is hosted by a different person each time. You can come, learn topics and share ideas in an open and informal atmosphere.\n\nThis time Julian Daich will talk about[ Dirac's Bra Ket notation](https://en.wikipedia.org/wiki/Bra%E2%80%93ket_notation).\n\nFor proposing a presentation or topic you can drop us a line.\n\nתאמי פי הוא מפגש אוצר, סדנה או מצגת על נושא במתמטיקה. זה קורה כל שבועיים בתאמי. את האירוע מנחה אדם אחר בכל פעם. תוכלו לבוא, ללמוד נושאים ולחלוק רעיונות באווירה פתוחה ונעימה.\n\nהפעם ג'ולואן דייטש יציג על [כתיבת דירק](https://en.wikipedia.org/wiki/Bra%E2%80%93ket_notation).\n\nלהצעת מצגת או נושא ניתן לפנות אלינו.",
+                "dateTime": "2025-04-24T19:00+03:00",
+                "__typename": "Event",
+                "date": "2025-04-24T16:00:00.000Z",
+                "time": "19:00",
+                "url": "https://www.meetup.com/tel-aviv-makers-tami/events/307164180"
+            },
+            {
+                "title": "TAMI open-fa-sure (Open Night)",
+                "eventUrl": "https://www.meetup.com/tel-aviv-makers-tami/events/307180647",
+                "description": "TAMI open-fa-sure (Open Night) is a great time to visit the space and get to know how things work.\n\nIf you want to double check whether someone is in the space, call 03-3726660.",
+                "dateTime": "2025-04-28T20:00+03:00",
+                "__typename": "Event",
+                "date": "2025-04-28T17:00:00.000Z",
+                "time": "20:00",
+                "url": "https://www.meetup.com/tel-aviv-makers-tami/events/307180647"
+            },
+            {
+                "title": "Repair caffé קפה תיקונים",
+                "eventUrl": "https://www.meetup.com/tel-aviv-makers-tami/events/307180830",
+                "description": "באו לתקן כל מה שלא עובד.\nCome to fix together",
+                "dateTime": "2025-04-28T20:00+03:00",
+                "__typename": "Event",
+                "date": "2025-04-28T17:00:00.000Z",
+                "time": "20:00",
+                "url": "https://www.meetup.com/tel-aviv-makers-tami/events/307180830"
+            },
+            {
+                "title": "TAMI Voice (maintenance day)",
+                "eventUrl": "https://www.meetup.com/tel-aviv-makers-tami/events/307199435",
+                "description": "**TAMI Voice (maintenance day)**\n\nThe space is open for everyone to come and enjoy, though you will see TAMI Elves cleaning and sorting things out. And you are welcome to join and help!\nIt is also a great time to share your thoughts and ideas how to make TAMI a better place!",
+                "dateTime": "2025-04-29T21:00+03:00",
+                "__typename": "Event",
+                "date": "2025-04-29T18:00:00.000Z",
+                "time": "21:00",
+                "url": "https://www.meetup.com/tel-aviv-makers-tami/events/307199435"
+            },
+            {
+                "title": "One  Computer Per Human מחשב אחד לכל אדם",
+                "eventUrl": "https://www.meetup.com/tel-aviv-makers-tami/events/306415038",
+                "description": "\\#\\# בנה מחשב משלך בלי לקנות כלום\\!\n\\*\\*רוצה לחסוך כסף ולבנות מחשב משלך?\\*\\*\n\\*\\*הצטרף לקורס בנית/הרכבת מחשבים ייחודי מבוסס על שימוש בזבל דיגיטלי\nותוכנה חופשית!\\*\\*\n\\*\\*מה תקבלו?\\*\\*\n\\* \\*\\*מחשב ניח שלם, פעיל ועובד\\*\\* שתיקחו הביתה בסוף הקורס.\n\\* ידע שלם בבניית, הרכבת, התקנת והפעלת מערת הפעלה גניו/ לינוקס תוכנות מחשב \\*\\*מאפס\\*\\*.\n\\* \\*\\*כלים ושיטות\\*\\* שיאפשרו לכם לתחזק ולתקן את המחשב שלכם בעתיד \\*\\*בלי\nצורך לקנות כלום\\*\\*.\n\\* \\*\\*הדרכה מקיפה\\*\\* כיצד להשיג חלקים במחירים זולים או בחינם.\n\\* \\*\\*קורס מותאם לכל אחד\\*\\*, ללא צורך בידע קודם.\n\\*\\*משך הקורס:\\*\\*עד 4 מפגשים שתאריכם כבעים במפגש הראשון.\n\\*\\*עלות:\\*\\* 300₪ ! כתרומה\n\nBuild Your Own Computer Without Buying Anything!\nWant to save money and build your own computer?\nJoin our unique computer building/assembly course based on the use of\ndigital waste and free software!\nWhat will you get?\nA complete working desktop computer that you will take home at the end of the course.\nAll the needed knowledge of building, assembling, installing, and running\nGNU/ Linux computer software from scratch.\nTools and methods that will allow you to maintain and repair your\ncomputer in the future without having to buy anything.\nComprehensive guidance on how to obtain parts at low prices or for free.\nA course tailored for everyone, with no prior knowledge required.\nCourse duration: up to 4 sessions. Dates are decided according to your preferences.\nCost: 300₪! As a donation to TAMI.",
+                "dateTime": "2025-04-30T20:00+03:00",
+                "__typename": "Event",
+                "date": "2025-04-30T17:00:00.000Z",
+                "time": "20:00",
+                "url": "https://www.meetup.com/tel-aviv-makers-tami/events/306415038"
+            },
+            {
+                "title": "TAMI Sonic (Music Night)",
+                "eventUrl": "https://www.meetup.com/tel-aviv-makers-tami/events/307236407",
+                "description": "TAMI Sonic (Music Night) is bi-weekly informal meetup devoted to playing and experimenting with sound.",
+                "dateTime": "2025-05-01T20:00+03:00",
+                "__typename": "Event",
+                "date": "2025-05-01T17:00:00.000Z",
+                "time": "20:00",
+                "url": "https://www.meetup.com/tel-aviv-makers-tami/events/307236407"
+            }
+        ]
+    }
+}
