@@ -13,6 +13,8 @@
     <script src="https://unpkg.com/maplibre-gl@^5.3.1/dist/maplibre-gl.js"></script>
     <link href="https://unpkg.com/maplibre-gl@^5.3.1/dist/maplibre-gl.css" rel="stylesheet" />
     
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
@@ -83,6 +85,122 @@
         </div>
       </div>
     </div>
+
+
+    <div class="flex w-full flex-col lg:flex-row">
+      <div class="card">
+      <h2 class="p-4 pb-2 text-xl font-bold">Donate</h2>
+      <div class="p-4 pb-2">      
+        <p>
+          TAMI is a non-profit organization (amuta) and supported by community donations only.<br>
+        </p>
+        <p>
+          <a href="https://www.guidestar.org.il/organization/580582278" class="link" title="https://www.guidestar.org.il/organization/580582278" rel="ugc nofollow">עמותה 580582278</a>
+        </p>
+        <p>
+          Although it is not mandatory, we ask to donate 200-300 ILS/month or <strong>as much as you can afford</strong>. <br>If money is an issue, you can donate your time or expertise - it is up to you.
+        </p>
+      </div>
+      <div class="flex w-full overflow-scroll">
+        <div class="card bg-base-100 flex-1 shadow-sm">
+          <figure class="px-10 pt-10">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-16">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0 1 15.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 0 1 3 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 0 0-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 0 1-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 0 0 3 15h-.75M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm3 0h.008v.008H18V10.5Zm-12 0h.008v.008H6V10.5Z" />
+            </svg>          
+          </figure>
+          <div class="card-body items-center">
+            <h2 class="card-title text-center">Cash</h2>
+            <p>There is a physical donation box at TAMI for you to insert your bills and/or coins into.</p>
+            <!--
+            <div class="card-actions">
+              <button class="btn btn-primary">See Box</button>
+            </div>
+            -->
+          </div>
+        </div>
+        <div class="card bg-base-100 flex-1 shadow-sm">
+          <figure class="px-10 pt-10">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-16">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z" />
+            </svg>               
+          </figure>
+          <div class="card-body items-center">
+            <h2 class="card-title text-center">Bank Transfer</h2>
+  
+            <p>This is the best-for-bang method, as credit cards take a cut</p>
+            <div class="card-actions">
+              <!-- Open the modal using ID.showModal() method -->
+              <button class="btn btn-primary" onclick="modal_bank_transfer.showModal()">Bank Details</button>
+              <dialog id="modal_bank_transfer" class="modal modal-bottom sm:modal-middle items-left text-left">
+                <div class="modal-box">
+                  <h3 class="text-lg font-bold">Bank Details</h3>
+                  <code class="card bg-neutral text-neutral-content p-4 my-4">
+                    Bank Name: U-Bank <br>
+                    Bank Number: 26 <br>
+                    Branch number: 262 <br>
+                    Account number: 429511 <br>
+                    Account name: תל אביב מייקרס (ע"ר) <br>
+                    <br>
+                    IBAN number: IL450262620000000429511 <br>
+                    SWIFT code: FIRBILITXXX <br>
+                    THE FIRST INTERNATIONAL BANK OF ISRAEL
+                  </code>
+                  <div class="modal-action">
+                    <form method="dialog">
+                      <!-- if there is a button in form, it will close the modal -->
+                      <button class="btn">Close</button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-base-100 flex-1 shadow-sm">
+          <figure class="px-10 pt-10">
+            <svg class="size-16" viewBox="0 0 48 48" id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="currentColor" stroke-width="2.4"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><defs><style>.cls-1{fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;}</style></defs><path class="cls-1" d="M14.25,4.5H26.37c4.18,0,7.44.88,9.24,2.94,1.64,1.87,2.13,3.94,1.65,7A6.09,6.09,0,0,1,39,15.74C40.53,17.5,40.83,20,40.25,23c-1.4,7.18-6.18,9.67-12.29,9.67H27A1.52,1.52,0,0,0,25.51,34l-.07.41L24.25,41.9l-.06.32a1.52,1.52,0,0,1-1.5,1.28H16.38A1.41,1.41,0,0,1,14.86,42c.84-5.36,1.65-10.39,2.49-15.74a5.25,5.25,0,0,1,1.49-.06h4.24c7,0,12.46-2.83,14.06-11l.12-.71A9.21,9.21,0,0,0,36,13.85l-.36-.11-.76-.19c-.26-.06-.52-.11-.8-.15a19.18,19.18,0,0,0-3.13-.23H20.71a1.45,1.45,0,0,0-.66.15,1.52,1.52,0,0,0-.84,1.13q-1.93,12.32-3.89,24.61l0,.11H8.52a1,1,0,0,1-1-1.2l5-32A1.74,1.74,0,0,1,14.25,4.5Z"></path></g></svg>        </figure>
+          <div class="card-body items-center">
+            <h2 class="card-title text-center">PayPal</h2>
+            <p></p>
+            <div class="card-actions">
+              <a class="btn btn-primary" href="https://paypal.me/TelAvivMakers">Donate</a>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-base-100 flex-1 shadow-sm">
+          <figure class="px-10 pt-10">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-16">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Z" />
+            </svg>                 
+          </figure>
+          <div class="card-body items-center">
+            <h2 class="card-title text-center">Card</h2>
+            <p>Donations via Credit Card, Bit, Google Pay, Apple Pay</p>
+            <div class="card-actions">
+              <a class="btn btn-primary" href="https://mrng.to/LVYVdHsDNz">One-Time Donation</a>
+              <a class="btn btn-primary" href="https://mrng.to/6cmTH6QtTY">Recurring Monthly Donation</a>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+      </div>
+      <!-- Add this where you want the chart to appear -->
+      <div class="card bg-base-100 p-0 my-4 flex-1 max-w-xl mx-auto">
+        <h2 class="text-8 font-bold mb-2">Finance stats</h2>
+        <canvas id="financeChart" width="400" height="400"></canvas>
+        <div class="text-xs opacity-60 mt-2">
+          <b>Current expenses (monthly):</b> Rent 3224, Arnona ~1500, Electricity ~1000, Water ~50, Internet 140, Invoicing 50, Accounting (yearly 5000)
+          <br>
+          <b>This month's donations:</b> 4000
+          <br>
+          <b>Last Updated:</b> 1 Jan 1970
+        </div>
+      </div>
+    </div>
+
+
+
 
     <div class="card">
       <h2 class="p-4 pb-2 text-8 font-bold">Join the community</h2>
@@ -303,10 +421,64 @@
   <script>
       var map = new maplibregl.Map({
           container: 'map', // container id
-          style: 'https://demotiles.maplibre.org/style.json', // style URL
-          center: [0, 0], // starting position [lng, lat]
-          zoom: 1 // starting zoom
+          style: 'https://api.protomaps.com/styles/v5/black/en.json?key=0f42b7bc7d476278', // style URL
+          center: [34.772, 32.052], // starting position [lng, lat] 32.052640224491384, 34.77240438815596
+          zoom: 14 // starting zoom
       });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const expenseLabels = [
+        'Rent', 'Arnona', 'Electricity', 'Water', 'Internet', 'Invoicing', 'Accounting (monthly)'
+      ];
+      // Accounting is yearly, so divide by 12 for monthly
+      const expenseData = [
+        3224, 1500, 1000, 50, 140, 50, Math.round(5000/12)
+      ];
+      const totalExpenses = expenseData.reduce((a, b) => a + b, 0);
+      const donations = 4000;
+    
+      new Chart(document.getElementById('financeChart'), {
+        type: 'doughnut',
+        data: {
+          // Only the outer ring (donations/gap) needs labels for legend
+          labels: [...expenseLabels],
+          datasets: [
+            {
+              // Outer ring: donations vs. gap
+              label: "Donations",
+              data: [donations, Math.max(totalExpenses - donations, 0)],
+              backgroundColor: [
+                'oklch(72.3% 0.219 149.579)', // Donations
+                'oklch(57.7% 0.245 27.325)'  // Gap
+              ],
+              borderWidth: 8,
+              hoverOffset: 8,
+              weight: 1, // Outer ring
+            },
+            {
+              // Inner pie: expenses
+              label: 'Expenses',
+              data: expenseData,
+              backgroundColor: [
+                '#6366f1', '#f59e42', '#fbbf24', '#60a5fa', '#34d399', '#f472b6', '#a78bfa'
+              ],
+              borderWidth: 2,
+              hoverOffset: 8,
+              weight: 4, // Inner ring
+            }
+          ]
+        },
+        options: {
+          cutout: '0%', // Makes the inner pie more visible
+          borderColor: '#000',
+          plugins: {
+            legend: { display: false },
+            tooltip: { enabled: true }
+          }
+        }
+      });
+    });
   </script>
 </body>
 </html>
