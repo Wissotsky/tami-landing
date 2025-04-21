@@ -1,3 +1,14 @@
+@import "tailwindcss" /*source(none)*/;
+
+/* @source "./public/*.{html,js}"; */
+@import 'maplibre-gl/dist/maplibre-gl.css';
+
+
+@plugin "daisyui" {
+    themes: light --default, dark --prefersdark, black;
+}
+@plugin "@tailwindcss/typography";
+
 .wissotsky-horizontal-text p {
     display: inline-block; 
 }

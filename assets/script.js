@@ -1,3 +1,17 @@
+import maplibregl from 'maplibre-gl';
+
+window.maplibregl = maplibregl;
+
+import Alpine from 'alpinejs'
+ 
+window.Alpine = Alpine
+ 
+Alpine.start()
+
+import Chart from 'chart.js/auto';
+
+window.Chart = Chart;
+
 async function fetchMeetups() {
     const resp = await fetch("./meetup.json");
     const data = await resp.json();
@@ -17,6 +31,8 @@ async function fetchMeetups() {
     });
     return data.db.all
 }
+
+window.fetchMeetups = fetchMeetups;
 
 function parseMeetupDateTime(eventDateTime) {
     // formatter for relative time
@@ -65,3 +81,5 @@ function parseMeetupDateTime(eventDateTime) {
     //dtf.format(eventTime);
     return `${dtf.format(eventTime)} (${rtfString})`; // return the formatted date and time
 }
+
+window.parseMeetupDateTime = parseMeetupDateTime;
