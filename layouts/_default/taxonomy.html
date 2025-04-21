@@ -1,1 +1,11 @@
-<h2>{{ .Title }}</h2>
+{{ define "main" }}
+  <h1>{{ .Title }}</h1>
+  <div class="card p-4">
+    <article class="prose">
+      {{ .Content }}
+    </article>
+    </div>
+  {{ range .Pages }}
+    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+  {{ end }}
+{{ end }}
